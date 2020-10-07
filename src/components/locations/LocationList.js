@@ -10,10 +10,10 @@ export const LocationList = () => {
     }, [])
 
     return (
-        <div class="locations">
+        <div className="locations">
             {
                 locations.map(location => {
-                    return <LocationCard key={location.id} address={location.address} footage={location.footage}/>
+                    return <LocationCard key={location.id} address={location.address} footage={location.footage} handicap={location.handicap}/>
                 })
             }
         </div>
